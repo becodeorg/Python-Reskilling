@@ -1,22 +1,34 @@
 = Python Reskilling
 
-The main goal of the *Python Reskilling* is to give people the _fundamentals_ of
-Python in *three days*. To achieve this *presentation* and *modules* would be
-given during the two first days, then a small project on the last.
-
-This repository acts as *storage for modules*, in the same manner as the
-_Syllabus Becodus_.
+The main goal of the *Python Reskilling* is to allow people to learn the
+_fundamentals_ of Python in *three days*. This repository contains different
+*modules* (_presentations_, _lessons_, _exercices_) to acquire the basics, as
+well as, a small project to _test_ your newly acquired knowledge.
 
 
 == Modules
 
+During the two first days we will focus on *acquiring the fundamentals*. Below,
+you will find links to the different sections we are going to explore.
+
+Each module will be composed of at least a *presentation* (_given by the
+coaches_), *learning material* (_you read on your own_) and *exercises* (_will
+be corrected in groups with the coaches_).
+
+* link:./[Introduction]
 * link:./[Conditions]
-* link:./[Loops]
-* link:./[Lists]
+* link:./[Loops and Iterator]
+* link:./[Tuples and Dictionaries]
 * link:./[Functions]
 
-NOTE: Try to implement *good practices* (_PEP8_, _..._) in each module so that
-they can be transmitted as seamlessly as possible.
+NOTE: We will try to see as many *good practices* (ex: _PEP8_) as possible, but
+feel free to _research_ on your own and share with the group.
+
+
+== Project
+
+The last day will be reserved to *work on a project* in small groups of _two_.
+You can find the instructions for the challenge link:./project[here].
 
 
 == Useful links
