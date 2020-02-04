@@ -1,9 +1,24 @@
 = Python Reskilling
 
 The main goal of the *Python Reskilling* is to give people the _fundamentals_ of
-Python in *three days*. To achieve this *presentation* and *content* would be
-given during the two first days, then a small project requiring all the
-fundamentals would be made on the last.
+Python in *three days*. To achieve this *presentation* and *modules* would be
+given during the two first days, then a small project on the last.
 
-This repository acts as *storage for content*, in the same manner as the
+This repository acts as *storage for modules*, in the same manner as the
 _Syllabus Becodus_.
+
+
+== Modules
+
+* link:./[Conditions]
+* link:./[Loops]
+* link:./[Lists]
+* link:./[Functions]
+
+NOTE: Try to implement *good practices* (_PEP8_, _..._) in each module so that
+they can be transmitted as seamlessly as possible.
+
+
+== Useful links
+
+* https://docs.python.org/3/[documentation]
