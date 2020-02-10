@@ -3,7 +3,7 @@
 The main goal of the *Python Reskilling* is to allow people to learn the
 _fundamentals_ of Python in *three days*. This repository contains different
 *modules* (_presentations_, _lessons_, _exercices_) to acquire the basics, as
-well as, a small project to _test_ your newly acquired knowledge.
+well as, a small *project* to _test_ your newly acquired knowledge.
 
 
 == Modules
