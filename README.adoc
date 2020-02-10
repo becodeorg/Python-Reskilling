@@ -5,6 +5,27 @@ _fundamentals_ of Python in *three days*. This repository contains different
 *modules* (_presentations_, _lessons_, _exercices_) to acquire the basics, as
 well as, a small *project* to _test_ your newly acquired knowledge.
 
+In order for the _reskilling_ to be both *useful* and *productive* we decided to
+put the *rules* below in place.
+
+|===
+| Rule | Why?
+
+| _Speak English_
+| For better communication everyone will have to speak in English.
+
+| _No speed-run_
+| The content as been prepared to cover three days, no need to go faster than
+the coaches.
+
+| _Be punctual_
+| To respect the schedule that as been thought out you should arrive on time.
+
+| _Learn together_
+| Although you could do everything on your own, you should try to help or ask
+for the help of your colleagues.
+|===
+
 
 == Modules
 
