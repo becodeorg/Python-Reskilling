@@ -1,1 +1,65 @@
 = Conditions
+
+== Learning Material
+
+=== The conditional construct
+
+The notion of *conditions* is one of the most important in programming. It
+introduces logic and allows the creation of _algorithms_.
+
+The idea behind the construct is to express something like this:
+
+----
+- If the variable is equal to something then do this.
+    - Do an action
+- If not, do this.
+    - Do an action
+----
+
+Python uses boolean variables to evaluate conditions. The boolean values `True`
+and `False` are returned when an expression is compared or evaluated. For
+example:
+
+[source,python]
+----
+x = 2
+print(x == 2) # prints out True
+print(x == 3) # prints out False
+print(x < 3) # prints out True
+----
+
+The simplest conditional construct would be a single `if` statement.
+
+[source,python]
+----
+age = 23
+if age >= 18:
+    print("You're an adult!")
+----
+
+However, you can _complexify_ the construct and allow for multiple conditional
+checks with the `elif` statement. The key word `elif` is a contraction of the
+words "else if".
+
+[source,python]
+----
+age = 17
+if age >= 18:
+    print("You're an adult!")
+elif age == 17 :
+    print("You are one year short of being an adult")
+----
+
+It is also possible to give instructions which will be executed only if the
+condition is not met. To do so you can use the `else` statement.
+
+[source,python]
+----
+age = 16
+if age >= 18:
+    print("You're an adult!")
+elif age == 17:
+    print("You are one year short of being an adult")
+else:
+    print("Come back later")
+----
