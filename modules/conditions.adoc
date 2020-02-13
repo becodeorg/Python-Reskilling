@@ -63,3 +63,76 @@ elif age == 17:
 else:
     print("Come back later")
 ----
+
+=== Logical operators
+
+As mentioned before _Python_ conditional statements works with evaluating a
+condition that is either `True` or `False`. That being said, you can also use
+*logical operators* like `and`, `or` and `not` in order to evaluate multiple
+condition on a single statement.
+
+The `and` operator checks if all the conditions are `True`.
+
+[source,python]
+----
+student1 = "John"
+student2 = "Eric"
+
+if student1 == "John" and student2 == "Eric":
+    print("You are John AND Eric")   
+else :
+    print("Welcome anonymous")
+----
+
+The `or` operator checks if at least one condition is `True`.
+
+[source,python]
+----
+student1 = "John"
+student2 = "Ludovic"
+
+if student1 == "John" or student2 == "Eric":
+    print("Your name is either John or Eric.")
+else :
+    print("Welcome anonymous")
+----
+
+The `in` operator could be used to check if a specified object exists within an
+iterable object container, such as a list.
+
+[source,python]
+----
+name = "Valérian"
+coach = ["Valérian", "Ludovic"]
+if name in coach:
+    print("Your are Coach!")
+else :
+    print("You are not coach")
+----
+
+Using `not` before a boolean expression inverts it:
+
+[source,python]
+----
+print(not False) # Prints out True
+print((not False) == (False)) # Prints out False
+
+name = "Ayaan"
+if name not in ["Valérian", "Ludovic"]:
+    print("Your are not coach")
+else :
+    print("You are coach")
+----
+
+Unlike the double equals operator `==`, the `is` operator does not match the
+values of the variables, but the instances themselves. For example:
+
+[source,python]
+----
+x = [1,2,3]
+y = [1,2,3]
+print(x == y) # Prints out True
+print(x is y) # Prints out False
+----
+
+But this operator will be further explained later.
