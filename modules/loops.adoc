@@ -5,11 +5,11 @@
 
 == Learning Material
 
-We will now discuss an element more complex and obscure than the conditions, I
-have named: the loops!
+We will now discuss an element more complex and obscure than the _conditions_, I
+have named: the *loops*!
 
 Loops are an essential element in programming. They allow instructions to be
-repeated a number of times. They also help to avoid repetition. Let's say you
+repeated a number of times. They also help to *avoid repetition*. Let's say you
 want to display the numbers from 1 to 10. Without the loops, we should write
 something like this:
 
@@ -32,11 +32,11 @@ repeats himself. Be {dry}[D.R.Y], think {dry}[D.R.Y].
 
 === While
 
-The while loop repeats the sequence of actions several times until the condition
-has the value False. The condition is given before the loop body and is checked
-before each execution of the loop body. As a general rule, the while loop is
-used when it is impossible to determine the exact number of iterations of the
-loop in advance.
+The while loop *repeats the sequence of actions several times* until the
+condition has the value False. The condition is given before the loop body and
+is checked before each execution of the loop body. As a general rule, the while
+loop is used when it is *impossible to determine the exact number of iterations*
+of the loop in advance.
 
 The syntax of the while loop in the simplest case looks like this:
 
@@ -56,8 +56,8 @@ while i <= 10:
     i += 1
 ----
 
-In python, the equivalent of the loop do...while does not exist. The loop
-do...while does not know in advance how many times it will iterate but it will
+In python, the equivalent of the loop `do...while` does not exist. The loop
+`do...while` does not know in advance how many times it will iterate but it will
 run at least once. On the other hand, it is very easy to create the same
 behaviour.
 
@@ -106,64 +106,30 @@ and increments by 1 (by default), and ends at a specified number.
 ----
 for i in range(10):
     print(i)
-
 ## Output: 0 .. 9
-----
 
-0
-1
-2
-3
-4
-5
-6
-7
-8
-9
-
-[source,python]
-----
 for i in range(2 ** 3):
     print(i)
+## Output: 0 .. 7
 ----
 
-0
-1
-2
-3
-4
-5
-6
-7
-
-With starting sprecified :
+With a point starting specified :
 
 [source,python]
 ----
 for i in range(4,10):
     print(i)
+## Output: 4 .. 9
 ----
 
-4
-5
-6
-7
-8
-9
-
-With step :
+With steps :
 
 [source,python]
 ----
 for i in range(0,10,2):
     print(i)
+## Output: 0 2 4 6 8
 ----
-
-0
-2
-4
-6
-8
 
 === Continue
 

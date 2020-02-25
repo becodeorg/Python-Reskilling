@@ -4,8 +4,8 @@
 
 === Lists
 
-Lists are sequences, ordered collections of objects separated by commas. They
-are declared with the indicating operator "[ ]":
+Lists are _sequences_, ordered collections of objects separated by commas. They
+are declared with the indicating operator `[]`.
 
 [source,python]
 ----
@@ -16,44 +16,39 @@ A value can be accessed by indicating the index.
 
 [source,python]
 ----
-print(myList[0])
-## Output: a
+print(myList[0]) ## Output: a
 ----
 
-We can specify that we only want the first two elements of the list
-
-[source,python]
-----
-print(myList[:2])
-## Output: ['a','b']
-----
-
-If we want to reverse the list
+We can also specify that we only want the first two elements of the list.
 
 [source,python]
 ----
-print(myList[::-1])
-## Output: ['d','c','b','a']
+print(myList[:2]) ## Output: ['a','b']
 ----
 
-Warning, the indexes always start from 0. It's a little disturbing at first, but
-you have to get used to it. Other examples of what can be done with the lists.
+If we want to reverse the list you can do it.
+
+[source,python]
+----
+print(myList[::-1]) ## Output: ['d','c','b','a']
+----
+
+Warning, the indexes *always start from 0*. It's a little disturbing at first,
+but you have to get used to it. Other examples of what can be done with the
+lists.
 
 [source,python]
 ----
 myList = myList * 5 
 print(myList)
 ## Output: ['a','b','c','a','b','c','a','b','c','a','b','c','a','b','c']
-----
 
-[source,python]
-----
 myList.append("Add Text")
 print(myList)
 ## Output: ['a','b','c','a','b','c','a','b','c','a','b','c','a','b','c','Add Text']
 ----
 
-You can put any type of data in it :
+You can put *any type* of data in it :
 
 [source,python]
 ----
@@ -62,7 +57,7 @@ otherList = [193.45, "Hello", ["Inception list", "Two elements"], 89, var]
 print(otherList)
 ----
 
-You can also merge two tables
+You can also *merge* two tables
 
 [source,python]
 ----
@@ -79,16 +74,18 @@ xy = x + y
 print(xy) ## Output: [1, 2, 3, 4, 4, 5, 1, 0]
 ----
 
-There are many methods, I invite you to find them out by searching on google.
+There are many methods, I invite you to find them out by doing some research.
 
 === Tuples
 
-Python offers a type of data called tuple (term meaning "Table UPLEt"), which is
-quite similar to a list but cannot be modified. Tuples are therefore preferable
-to lists wherever you want to be sure that the data transmitted is not modified
-by mistake within a program. In addition, tuples are less "greedy" in terms of
-system resources (they take less memory space). Tuples are immutable objects (We
-will see what this means a little later.)
+Python offers a type of data called *tuple* (_term meaning Table UPLEt_), which
+is quite similar to a list but *cannot be modified*. Tuples are therefore
+preferable to lists whenever you want to be sure that the data transmitted is
+not modified by mistake within a program.
+
+In addition, tuples are less _greedy_ in terms of system resources (_they take
+less memory space_). Tuples are immutable objects (_We will see what this means a
+little later_).
 
 [source,python]
 ----
@@ -99,22 +96,19 @@ listExample = ["Moriarty", "Sherlock", "Watson"]
 ==== Tuples vs Lists
 
 As we can see, when we try to modify the content of a Tuple object, we get an
-error. However, no problem for the list
+error. However, no problem for the list.
 
 [source,python]
 ----
 tupleExample.append("Lestrade")
-----
 
-AttributeError: 'tuple' object has no attribute 'append'
+## AttributeError: 'tuple' object has no attribute 'append'
 
-[source,python]
-----
 listExample.append("Lestrade")
 print(listExample)
 ----
 
-And as we have seen previously, even if we save the "listExample" variable in
+And as we have seen previously, even if we save the _listExample_ variable in
 another variable and make a modification on one of the lists, both lists will be
 impacted.
 
@@ -127,28 +121,28 @@ print(listExample2)
 print(listExample)
 ----
 
-So if you need to process a collection that will not change, use tuples. On the
-other hand, if you know that this collection will have to be changed, then use
-the lists.
+So if you need to process a _collection_ that will not change, use tuples. On
+the other hand, if you know that this collection will have to be changed, then
+use the lists.
 
 === Dictionaries
 
-The dictionaries or "associative array" is not a sequence but another composite
-type. They look similar to the lists to some extent (they are editable like
-them), but the elements we are going to record will not be arranged in an
-unchanging order. On the other hand, we will be able to access any of them using
-a specific index called a key, which can be alphabetical, numerical, or even a
-composite type under certain conditions. Note: Like in a list, the elements
-stored in a dictionary can be of any type (numerical values, strings, lists,
-etc.).
+The *dictionaries* or _associative arrays_ are not a sequence but another
+composite type. They look similar to the lists to some extent (_they are
+editable like them_), but the elements we are going to record will not be
+arranged in an unchanging order. On the other hand, we will be able to access
+any of them using a specific index called a *key*, which can be _alphabetical_,
+_numerical_, or even a _composite type_ under certain conditions. Note: Like in
+a list, the elements stored in a dictionary can be of any type (numerical
+values, strings, lists, etc.).
 
 In dictionaries, indexes will be strings of characters, unlike lists.
 
-Since the dictionary type is a modifiable type, we can start by creating an
+Since the dictionary type is a _modifiable type_, we can start by creating an
 empty dictionary and then fill it in little by little. From a syntactic point of
 view, a dictionary-type data structure is recognized by the fact that its
 elements are enclosed in a pair of braces. An empty dictionary will therefore be
-noted `{ }
+noted `{}`
 
 [source,python]
 ----
@@ -162,7 +156,7 @@ print(heroes)
 
 As you can see in the line above, a dictionary appears as a series of elements
 separated by commas (all enclosed between two braces). Each of these elements
-consists of a pair of objects: an index and a value, separated by a colon.
+consists of a pair of objects: an _index_ and a _value_, separated by a colon.
 
 In a dictionary, indexes are called keys, so elements can be called key-value
 pairs. You may notice that the order in which the elements appear in the last
