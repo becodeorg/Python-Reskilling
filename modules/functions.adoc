@@ -2,13 +2,13 @@
 
 == Learning Material
 
-A function is a block of code which only runs when it is called. You can pass
-data, known as parameters, into a function. A function can return data as a
+A *function* is a block of code which only runs when it is called. You can pass
+data, known as _parameters_, into a function. A function can return data as a
 result.
 
 === Creating a Function
 
-In Python a function is defined using the <font color=green>def</font> keyword:
+In Python a function is defined using the `def` keyword:
 
 [source,python]
 ----
@@ -35,7 +35,7 @@ Information can be passed to functions as parameter.
 Parameters are specified after the function name, inside the parentheses. You
 can add as many parameters as you want, just separate them with a comma.
 
-The following example has a function with one parameter (fname). When the
+The following example has a function with one parameter (_fname_). When the
 function is called, we pass along a first name, which is used inside the
 function to print the full name:
 
@@ -51,9 +51,8 @@ my_function("Linus") ## Output: Linus Refsnes
 
 === Default Parameter Value
 
-The following example shows how to use a default parameter value.
-
-If we call the function without parameter, it uses the default value:
+The following example shows how to use a default parameter value. If we call the
+function without parameter, it uses the default value:
 
 [source,python]
 ----
@@ -68,12 +67,12 @@ my_function("Brazil") ## Output: I am from Brazil
 
 === Passing a List as a Parameter
 
-You can send any data types of parameter to a function (string, number, list,
-dictionary etc.), and it will be treated as the same data type inside the
+You can send any data types of parameter to a function (_string, number, list,
+dictionary etc._), and it will be treated as the same data type inside the
 function.
 
-E.g. if you send a List as a parameter, it will still be a List when it reaches
-the function:
+E.g. if you send a `list` as a parameter, it will still be a `list` when it
+reaches the function:
 
 [source,python]
 ----
@@ -88,8 +87,7 @@ my_function(fruits)
 
 === Return Values
 
-To let a function return a value, use the <font color=blue>return</font>
-statement:
+To let a function return a value, use the `return` statement:
 
 [source,python]
 ----
@@ -103,9 +101,8 @@ print(my_function(9)) ## Output: 45
 
 === Keyword Arguments
 
-You can also send arguments with the key = value syntax.
-
-This way the order of the arguments does not matter.
+You can also send arguments with the `key = value` syntax. This way the order of
+the arguments does not matter.
 
 [source,python]
 ----
@@ -118,9 +115,8 @@ my_function(child1 = "Emil", child2 = "Tobias", child3 = "Linus")
 
 === Arbitrary Arguments
 
-If you do not know how many arguments that will be passed into your function,
-add a <font color=red>*</font> before the parameter name in the function
-definition.
+If you do not know how many arguments will be passed into your function, add a
+`*` before the parameter name in the function definition.
 
 This way the function will receive a tuple of arguments, and can access the
 items accordingly:

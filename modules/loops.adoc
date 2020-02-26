@@ -32,8 +32,8 @@ repeats himself. Be {dry}[D.R.Y], think {dry}[D.R.Y].
 
 === While
 
-The while loop *repeats the sequence of actions several times* until the
-condition has the value False. The condition is given before the loop body and
+The `while` loop *repeats the sequence of actions several times* until the
+condition has the value `False`. The condition is given before the loop body and
 is checked before each execution of the loop body. As a general rule, the while
 loop is used when it is *impossible to determine the exact number of iterations*
 of the loop in advance.
@@ -73,10 +73,10 @@ print("correct answer")
 
 === For
 
-A "for" loop is used for iterating over a sequence (that is either a list, a
-tuple, a dictionary, a set, or a string).
+A `for` loop is used for iterating over a sequence (_that is either a list, a
+tuple, a dictionary, a set, or a string_).
 
-Unlike the for keyword in other programming language, it works more like an
+Unlike the `for` keyword in other programming language, it works more like an
 iterator method as found in other object-orientated programming languages.
 
 With the for loop we can execute a set of statements, once for each item in a
@@ -178,34 +178,33 @@ while i < 10:
     i += 1
 else:
     print('Finally finished!, i =', i)
-----
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-Finally finished!, i = 10
+## Output
+# 1
+# 2
+# 3
+# 4
+# 5
+# 6
+# 7
+# 8
+# 9
+# Finally finished!, i = 10
 
-[source,python]
-----
 for i in range(1, 10):
   print(i)
 else:
   print("Finally finished!, i =", i)
-----
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-Finally finished!, i = 9
+## Output
+# 1
+# 2
+# 3
+# 4
+# 5
+# 6
+# 7
+# 8
+# 9
+# Finally finished!, i = 9
+----
