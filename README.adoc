@@ -1,9 +1,12 @@
 = Python Reskilling
 
+// Links
+:presentation: https://docs.google.com/presentation/d/1P-u7CudtLAWlwYTZ93chSBreieEaBNesAib6XV7BRQY/edit?usp=sharing
+
 The main goal of the *Python Reskilling* is to allow people to learn the
 _fundamentals_ of Python in *three days*. This repository contains different
-*modules* (_presentations_, _lessons_, _exercices_) to acquire the basics, as
-well as, a small *project* to _test_ your newly acquired knowledge.
+*modules* (_learning material_, _exercises_) to acquire the basics, as well as,
+a small *project* to _test_ your newly acquired knowledge.
 
 In order for the _reskilling_ to be both *useful* and *productive* we decided to
 put the *rules* below in place.
@@ -12,11 +15,12 @@ put the *rules* below in place.
 | Rule | Why?
 
 | _Speak English_
-| For better communication everyone will have to speak in English.
+| For better communication and in order for the coaches to understand the needs
+everyone will have to speak in English.
 
-| _No speed-run_
+| _No speed-running_
 | The content as been prepared to cover three days, no need to go faster than
-the coaches.
+the coaches or your colleagues.
 
 | _Be punctual_
 | To respect the schedule that as been thought out you should arrive on time.
@@ -54,4 +58,6 @@ You can find the instructions for the challenge link:./project[here].
 
 == Useful links
 
+* {presentation}[presentation]
 * https://docs.python.org/3/[documentation]
+* https://www.python.org/dev/peps/pep-0008/[pep 8]
