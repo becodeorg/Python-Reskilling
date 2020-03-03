@@ -1,17 +1,5 @@
 = Introduction
 
-// TODO: write a small introduction to python.
-
-Notice that variable assignment is done using a single equal operator "=",
-whereas comparison between two variables is done using the double equals
-operator "==". The "not equals" operator is marked as "!=".
-
-Python uses indentation to define code blocks, instead of brackets. The standard
-Python indentation is 4 spaces, although tabs and any other space size will
-work, as long as it is consistent. Notice that code blocks do not need any
-termination.
-
-
 == Learning Material
 
 === Setup the environment
@@ -149,6 +137,719 @@ Python keywords contain only lowercase letters.
 
 === Variables and data types
 
+Variables are used to temporarily store a value in the computer's memory. We can
+then use it later, when we need it in the program. We can compare that to a
+small box in which we could store information.
+
+Since Python is a dynamically typed language, Python values, not variables,
+carry type. This has implications for many aspects of the way the language
+functions.
+
+All variables in Python hold references to objects, and these references are
+passed to functions; a function cannot change the value of variable references
+in its calling function (but see below for exceptions). Some people (including
+Guido van Rossum himself) have called this parameter-passing scheme "Call by
+object reference." An object reference means a name, and the passed reference is
+an "alias", i.e. a copy of the reference to the same object, just as in C/C++.
+The object's value may be changed in the called function with the "alias", for
+example:
+
+==== Naming and code writing conventions
+
+As in many programming languages, to name a variable, some conventions must be
+respected.
+
+The name of the variable must start with a letter or an underscore. The variable
+can not start with a number or a hyphen.
+
+[source,python]
+----
+## Bad examples (do not do this):
+2Name = "James" 
+-name = "James"
+
+## Good examples (do this):
+name = "James" 
+_name = "James"
+----
+
+Never put space between words. You can use multiple naming conventions. Camel
+Case, Pascal Case, underscore case, etc ... Whatever you choose, keep it for the
+whole project.
+
+[source,python]
+----
+## Bad example (do not do this):
+My name = "Odile"
+
+## Good example (do this):
+myName = "Odile" 
+MyName = "Odile"
+my_name = "Odile"
+----
+
+No accents on the names of variables. Use only English
+
+[source,python]
+----
+## Bad example (do not do this):
+prénom = "Odile"
+
+## Good example (do this):
+firstName = "Odile"
+----
+
+Always give an explicit name to the variable.
+
+[source,python]
+----
+## Bad example (do not do this):
+a = "Odile" 
+fstnme = "Odile"
+
+## Good example (do this):
+firstName = "Odile" 
+magicPotion = 42
+----
+
+==== Numbers
+
+Python supports two types of numbers - integers and floating point numbers. (It
+also supports complex numbers, which will not be explained in this tutorial).
+
+To define an integer, use the following syntax:
+
+[source,python]
+----
+myint = 7
+print(myint)
+----
+
+To define a floating point number, you may use one of the following notations:
+
+[source,python]
+----
+myfloat = 7.0
+print(myfloat)
+myfloat = float(7)
+print(myfloat)
+----
+
+==== Strings
+
+Strings are defined either with a single quote or a double quotes.
+
+[source,python]
+----
+mystring = 'hello'
+print(mystring)
+mystring = "hello"
+print(mystring)
+----
+
+The difference between the two is that using double quotes makes it easy to
+include apostrophes (whereas these would terminate the string if using single
+quotes)
+
+[source,python]
+----
+mystring = "Don't worry about apostrophes"
+print(mystring)
+----
+
+There are additional variations on defining strings that make it easier to
+include things such as carriage returns, backslashes and Unicode characters.
+
+Simple operators can be executed on numbers and strings:
+
+[source,python]
+----
+one = 1
+two = 2
+three = one + two
+print(three)
+
+hello = "hello"
+world = "world"
+helloworld = hello + " " + world
+print(helloworld)
+----
+
+Assignments can be done on more than one variable "simultaneously" on the same
+line like this
+
+[source,python]
+----
+a, b = 3, 4
+print(a,b)
+----
+
+Mixing operators between numbers and strings is not supported:
+
+[source,python]
+----
+# This will not work!
+one = 1
+two = 2
+hello = "hello"
+
+print(one + two + hello)
+----
+
+To format the text, you can use the format() method in the class string
+
+[source,python]
+----
+lastName = "Bond"
+firstName = "James"
+text = "My name is {}, {} {}.".format(lastName, firstName, lastName)
+print(text)
+----
+
+Another example. Replace the value of the variable age with your age and the
+variable firstname with your First name.
+
+[source,python]
+----
+age = "34"
+firstName ="Chrysanthi"
+text = "Hello, my name is {} and i am {}".format(firstName, age)
+print(text)
+----
+
+==== Data types
+
+Since Python is a high-level language, it has a dynamic variable typing. By
+dynamics, understand that it is the computer that deals with defining what type
+of variable should be used. To be perfectly accurate, it is not the variable
+that is typed (unlike Java) but its content
+
+In java we declare a variable like this: `String fisrtName = "James"`
+
+We define the type of variable ourselves. With python we declare a variable like
+this: `firstName = "James"`
+
+And so, it's python that will define what type will be used.
+
+[source,python]
+----
+firstName = "James" # String
+lastName = "Bond"  # String
+age = 39  # Integer
+weigth = 81.56 # Float
+doubleAgent = True # Boolean
+login = "007" # String
+agent = [firstName, lastName, age, weigth, doubleAgent, login] # List
+print(agent)
+
+## Output: ['James', 'Bond', 39, 81.56, True, '007']
+----
+
+Here is a not limited list of the types we use most often. These are the most
+frequently used. For tuples, dictionaries and sets we'll see them later
+
+|===
+| Name | Type | Description
+
+| Integers
+| INT
+| Whole numbers, such as : *1*, *67*, *5000*
+
+| Floating point
+| FLOAT
+| Decimal point numbers, such as : *1.89*, *0.67*, *9.99999*
+
+| Strings
+| STR
+| Ordered sequence of characters : *"Hello"*, *"10"*
+
+| Lists
+| LIST
+| Ordered sequence of objects : *["hello", 10, 56.89]*
+
+| Dictionaries
+| DICT
+| Unordered (Key : Value) pairs : *{"Key1": value, "name" : "Peter}*
+
+| Tuples
+| TUPLE
+| Ordered sequence of objects (immutable) : *["hello", 10, 56.89]*
+
+| Sets
+| SET
+| Unordered collections of unique objects : *{1,2}*
+
+| Booleans
+| BOOL
+| Logical value : *True* or *False*
+|===
+
+There is a native python function that allows you to know what type of data you
+have. This is the type() function
+
+[source,python]
+----
+print(firstName, type(firstName))
+print(lastName, type(lastName))
+print(age, type(age))
+print(weigth, type(weigth))
+print(agent, type(agent))
+----
+
+If you want to specify the data type, you can use the following constructor
+functions
+
+[%header]
+|===
+| Example | Data type
+
+| `x = str("Hello World")`
+| _STR_
+
+| `x = int(20)`
+| _INT_
+
+| `x = float(20.5)`
+| _FLOAT_
+
+| `x = complex(1j)`
+| _COMPLEX_
+
+| `x = list(("apple", "banana", "cherry"))`
+| _LIST_
+
+| `x = tuple(("apple", "banana", "cherry"))`
+| _TUPLE_
+
+| `x = range(6)`
+| _RANGE_
+
+| `x = dict(name="John", age=36)`
+| _DICT_
+
+| `x = set(("apple", "banana", "cherry"))`
+| _SET_
+
+| `x = frozenset(("apple", "banana", "cherry"))`
+| _FROZENSET_
+
+| `x = bool(5)`
+| _BOOL_
+
+| `x = bytes(5)`
+| _BYTES_
+
+| `x = bytearray(5)`
+| BYTEARRAY
+
+| `x = memoryview(bytes(5))	`
+| _MEMORYVIEW_
+|===
+
+You can also convert from one type to another with the same functions, for
+example:
+
+[source,python]
+----
+x = 1 # int
+y = 2.8 # float
+z = 1j # complex
+
+#convert from int to float:
+a = float(x)
+
+#convert from float to int:
+b = int(y)
+
+#convert from int to complex:
+c = complex(x)
+
+print(a)
+print(b)
+print(c)
+
+print(type(a))
+print(type(b))
+print(type(c))
+----
+
 === Basic operators
 
+==== Arithmetic operators
+
+Arithmetic Operators perform various arithmetic calculations like addition,
+subtraction, multiplication, division, %modulus, exponent, etc. There are
+various methods for arithmetic calculation in Python : you can use the eval
+function or declare variable & calculate, or call functions.
+
+[%header]
+|===
+| Operator | Description
+
+| `+`
+| Adds values on either side of the operator.
+
+| `-`
+| Subtracts right hand operand from left hand operand.
+
+| `*`
+| Multiplies values on either side of the operator
+
+| `/`
+| Divides left hand operand by right hand operand
+
+| `%`
+| Divides left hand operand by right hand operand
+
+| `**`
+| Performs exponential (power) calculation on operators
+
+| `//`
+| Floor Division - The division of operands where the result is the quotient in
+which the digits after the decimal point are removed. But if one of the operands
+is negative, the result is floored, i.e., rounded away from zero (towards
+negative infinity) −
+|===
+
+[source,python]
+----
+## Example
+
+## We begin by creating two variables and assign two values to them.
+a = 10 
+b = 20
+
+## Addition
+add = a + b
+print(add) # Output: 30
+
+## Subtraction
+sub = b - a
+print(sub) # Output: 10
+
+## Multiplication
+multi = a * b
+print(multi) # Output: 200
+
+## Division (in this case Python will return a FLOAT)
+div = b / a
+print(div) # Output: 2.0
+
+## Floor division
+floorDiv = b // a
+print(floorDiv) # Output: 2
+
+## Modulus
+modulus = b % a
+print("modulus :", modulus) # Output: 0
+modulus2 = 21 % 2
+print("modulus2 :", modulus2) # Output: 1 
+
+## Exponent
+exp = a**2
+print(exp) # Output: 100
+----
+
+==== Comparison operators
+
+These operators compare the values on either side of the operands and determine
+the relation between them. It is also referred as relational operators. Various
+comparison operators are ( ==, != , <>, >,<=, etc)
+
+[%header]
+|===
+| Operator | Description
+
+| `==`
+| If the values of two operands are equal, then the condition becomes true.
+
+| `!=`
+| If values of two operands are not equal, then condition becomes true.
+
+| `>`
+| If the value of left operand is greater than the value of right operand, then
+condition becomes true.
+
+| `<`
+|	If the value of left operand is less than the value of right operand, then
+condition becomes true.
+
+| `>=`
+| If the value of left operand is greater than or equal to the value of right
+operand, then condition becomes true.
+
+| `<=`
+| If the value of left operand is less than or equal to the value of right
+operand, then condition becomes true.
+|===
+
+[source,python]
+----
+## Example
+
+## We begin by creating two variables and assign two values to them.
+a = 10
+b = 20
+
+## Equals
+print(a==b) # Output: False
+print(a==10) # Output: True
+
+## Not equals
+print(a!=b) # Output: True
+print(a!=10) # Output: False
+
+## Bigger than
+print(a>b) # Output: False
+print(b>a) # Output: True
+
+## Bigger or equal to
+print(a>=b) # Output: False
+print(b>=a) # Output: True
+
+## Smaller than
+print(a>b) # Output: False
+print(b>a) # Output: True
+
+## Smaller or equal to
+print(a>=b) # Output: False
+print(b>=a) # Output: True
+----
+
+==== Assignment operators
+
+Python assignment operators are used for assigning the value of the right
+operand to the left operand. Various assignment operators used in Python are
+(+=, - = , *=, /= , etc.)
+
+[%header]
+|===
+| Operator | Description
+
+| `=`
+| Assigns values from right side operands to left side operand
+
+| `+=`
+| It adds right operand to the left operand and assign the result to left
+operand
+
+| `-=`
+| It subtracts right operand from the left operand and assign the result to left
+operand
+
+| `*=`
+| It multiplies right operand with the left operand and assign the result to
+left operand
+
+| `/=`
+| It divides left operand with the right operand and assign the result to left
+operand
+
+| `%=`
+| It takes modulus using two operands and assign the result to left operand
+
+| `**=`
+| Performs exponential (power) calculation on operators and assign value to the
+left operand
+
+| `//=`
+| It performs floor division on operators and assign value to the left operand
+|===
+
+Let's try it. We create 2 variables and assign two values to them.
+
+[source,python]
+----
+## Example
+
+## Assignment
+a = 10
+name = "Alan Turing"
+print(a) # Output: 10
+print(name) # Output: Alan Turing
+
+## Note: From now on you can only do these actions on the same data type.
+
+## Add
+a += 10
+name += " is a good mathematician"
+print(a) # Output: 20
+print(name) # Output: Alan Turing is a good mathematician 
+
+## Subtract (doesn't work with strings)
+a = 20
+a -= 10
+print(a) # Output: 10
+
+## Multiply
+a = 10
+a *= 10
+print(a) # Output: 100
+
+text = "Alan Turing"
+text *= 10
+print(text) # Output: Alan Turing ... Alan Turing
+
+## Divide (doesn't work with strings)
+a = 100
+a /= 10
+print(a) # Output: 10
+
+## Modulus (doesn't work with strings)
+a = 100
+a %= 3
+print(a) # Output: 1
+
+## Exponent (doesn't work with strings)
+a = 2 
+a **= 3
+print(a) # Output: 8
+
+## Floor division (doesn't work with strings)
+a = 20
+a //= 3
+print(a) # Output: 6
+----
+
 === Built-in functions
+
+The Python interpreter has a number of functions and types built into it that
+are always available. We have already used them. Remember the print() function
+which allows you to display text.
+
+[source,python]
+----
+print("Hello World")
+----
+
+There is the `input()` method which allows the user to enter text.
+
+[source,python]
+----
+age = input("How old are you?")
+print("Your age", age)
+----
+
+The input value will always be a string. We'll use another native function to
+check it.
+
+[source,python]
+----
+print(type(age))
+----
+
+Functions that allow cast : str(), int (), float(), etc...
+
+[source,python]
+----
+age = input("How old are you?")
+print("string :", age, type(age))
+
+age = int(age) # Cast from string to integer
+print("integer :", age, type(age))
+
+age =  float(age)# Cast from int to float
+print("float :", age, type(age))
+
+age =  str(age)# Cast from float to string
+print("string :", age, type(age))
+----
+
+The `len()` function allows us to know how many elements are in a list or
+string.
+
+[source,python]
+----
+print(len("Hello Word"))
+
+arr = ["one", "two"]
+print(len(arr))
+----
+
+|===
+5+^| Built-in Functions
+
+| `abs()`
+| `delattr()`
+| `hash()`
+| `memoryview()`
+| `set()`
+
+| `all()`
+| `dict()`
+| `help()`
+| `min()`
+| `setattr()`
+
+| `any()`
+| `dir()`
+| `hex()`
+| `next()`
+| `slice()`
+
+| `ascii()`
+| `divmod()`
+| `id()`
+| `object()`
+| `sorted()`
+
+| `bin()`
+| `enumerate()`
+| `input()`
+| `oct()`
+| `staticmethod()`
+
+| `bool()`
+| `eval()`
+| `int()`
+| `open()`
+| `str()`
+
+| `breakpoint()`
+| `exec()`
+| `isinstance()`
+| `ord()`
+| `sum()`
+
+| `bytearray()`
+| `filter()`
+| `issubclass()`
+| `pow()`
+| `super()`
+
+| `bytes()`
+| `float()`
+| `iter()`
+| `print()`
+| `tuple()`
+
+| `callable()`
+| `format()`
+| `len()`
+| `property()`
+| `type()`
+
+| `chr()`
+| `frozenset()`
+| `list()`
+| `range()`
+| `vars()`
+
+| `classmethod()`
+| `getattr()`
+| `locals()`
+| `repr()`
+| `zip()`
+
+| `compile()`
+| `globals()`
+| `map()`
+| `reversed()`
+| `__import__()`
+
+| `complex()`
+| `hasattr()`
+| `max()`
+| `round()`
+| ...
+|===

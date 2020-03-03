@@ -28,6 +28,15 @@ print(x == 3) # prints out False
 print(x < 3) # prints out True
 ----
 
+Notice that variable assignment is done using a single equal operator `=`,
+whereas comparison between two variables is done using the double equals
+operator `==`. The "not equals" operator is marked as `!=`.
+
+Python uses indentation to define code blocks, instead of brackets. The standard
+Python indentation is 4 spaces, although tabs and any other space size will
+work, as long as it is consistent. Notice that code blocks do not need any
+termination.
+
 The simplest conditional construct would be a single `if` statement.
 
 [source,python]
