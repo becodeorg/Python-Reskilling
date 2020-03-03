@@ -6,7 +6,9 @@
 The main goal of the *Python Reskilling* is to allow people to learn the
 _fundamentals_ of Python in *three days*. This repository contains different
 *modules* (_learning material_, _exercises_) to acquire the basics, as well as,
-a small *project* to _test_ your newly acquired knowledge.
+a small *project* to _test_ your newly acquired knowledge. You can also find a
+file containing additional challenges link:./challenges.adoc[here], feel free
+to explore it *if you have time* between _modules_.
 
 In order for the _reskilling_ to be both *useful* and *productive* we decided to
 put the *rules* below in place.
