@@ -183,3 +183,48 @@ print(heroes)
 
 ## Output: {'Batman': 'Bruce Wayne', 'Superman': 'Clark Kent', 'Spiderman': 'Peter Parker'}
 ----
+
+
+== Exercises
+
+=== 1. Choose 5 movies you like and create a dictionary that associates
+each of these movies with its director.
+
+
+=== 2. Add an entry to the dictionary of the previous question (a new
+movie and its director)
+
+
+=== 3. How would you cut the following string at each space and put it
+in a list:
+
+
+=== 4. Transform this string ``Why_am_I_Mister_pink_?'' by removing the
+underscores: ``Why am I Mister pink ?''
+
+
+=== 5. Display only values of this dictionary.
+
+
+=== 6. Display only keys of this dictionary.
+
+
+=== 7. Replace the value of ``Pulp Fiction'' by ``Quentin Tarantino''.
+
+
+=== 8. Create a dictionary to build the total time with the length of
+each movie corresponding to the following table:
+
+....
+Memories Of Murder // 132 minutes
+Pulp Fiction // 154 minutes
+The Usual Suspects // 106 minutes
+Interstellar // 169 minutes
+Take Shelter // 120 minutes
+....
+
+
+=== 9. Calculate the number of hours it takes to watch all the movies
+
+
+=== 10. Remove one of the movies from the dictionary

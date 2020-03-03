@@ -129,3 +129,133 @@ def my_function(*kids):
 my_function("Emil", "Tobias", "Linus")
 ## Output: The youngest child is Linus
 ----
+
+
+== Exercises
+
+=== 1. Say Hello
+
+Write a function called greetings(name) that returns a string of
+characters. This function will take as argument a variable name. This
+function will return a string `Hello name'
+
+=== 2. Count employees
+
+Create a function ``sum_of_employees()'' that calculates and returns the
+number of students in a list. The function will have to return an
+integer.
+
+=== 3. Is divisible ?
+
+Create a function is_divisible(n, x, y) that checks if a number n is
+divisible by two numbers x AND y. All inputs are positive, non-zero
+digits.
+
+Example:
+
+....
+is_divisible(3,1,3)--> True because 3 is divisible by 1 and 3
+is_divisible(12,2,6)--> True because 12 is divisible by 2 and 6
+is_divisible(100,5,3)--> False because 100 is not divisible by 3
+is_divisible(12,7,5)--> False because 12 is neither divisible by 7 nor 5
+....
+
+
+=== 4. Abbreviate a multiple words Company Name
+
+Write a function to convert a company name into an acronym. This
+function strickly takes multiple words with one space in between them.
+
+Example :
+
+....
+Bayerische Motoren Werk => B.M.W.
+Ingvar Kamprad Elmtaryd Agunnaryd => I.K.E.A.
+American Standard Code Information Interchange => A.S.C.I.I.
+....
+
+
+=== 5. Sum of positive
+
+You get an array of numbers, return the sum of all of the even ones.
+
+Example : +
+`[4, 8, 15, 16, 23, 42] => 4 + 8 + 16 + 42 = 70`
+
+
+=== 6. Sum mixed array
+
+Given an array of integers as strings and numbers, return the sum of the
+array values as if all were numbers.
+
+Return your answer as a number.
+
+Example :
+
+....
+sum_mix(['5', '0', 9, 3, 2, 1, '9', 6, 7]) => 42
+....
+
+
+### 7. Return the month Complete the function which returns the month
+according to the input number:
+
+....
+1 returns "January"
+2 returns "February"
+3 returns "March"
+4 returns "April"
+5 returns "May"
+6 returns "June"
+7 returns "July"
+8 returns "August"
+9 returns "September"
+10 returns "October"
+11 returns "November"
+12 returns "December"
+Otherwise returns "Wrong, please enter a number between 1 and 12"
+....
+
+
+=== 8. Product
+
+Write a program that finds the product of every number from 1 to num.
+The number will always be a positive integer greater than 0.
+
+Example :
+
+....
+    product(2) -> 2
+    1 x 2
+
+    product(4) -> 24
+    1 x 2 x 3 x 4
+....
+
+
+=== 9. If you can’t sleep, just count sheep!!
+
+Given a non-negative integer, 3 for example, return a string with a
+murmur: ``1 sheep…2 sheep…3 sheep…''. Input will always be valid,
+i.e. no negative integers.
+
+
+=== 10. Employee’s salary
+
+Create a function salary_calculator, which calculates the monthly salary
+of an employee depending on two parameters: the education and the
+seniority.
+
+This function should take two arguments: education (`Highschool' -
+`University' - `BeCode'); seniority - years inside the company (from 0
+and above);
+
+This function should return a number (salary). There are four types of
+salaries:
+
+....
+1 000 000 euros , if the education is BeCode or if the seniority is more than 100.
+90 000 euros, if the education is University and if the seniority is at least 25.
+50 000 euros, if the degree is Highschool and if the seniority is at least 5.
+2 euros in other cases
+....

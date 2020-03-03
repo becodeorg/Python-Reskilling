@@ -208,3 +208,66 @@ else:
 # 9
 # Finally finished!, i = 9
 ----
+
+
+== Exercises
+
+=== 1. Display all employee in the ``employees'' list.
+
+
+=== 2. Display only those whose first name begins with the letter J
+
+
+=== 3. Display integers from 0 to 23 not included, using a ``for'' loop
+and the range() instruction.
+
+
+=== 4. Use the ``break'' instruction to interrupt a ``for'' loop to
+display integers from 1 to 10 included, when the loop variable is 7
+
+
+### 5. Use the ``continue'' instruction to modify a ``for'' loop to
+display intergers from 1 to 10 included, when the loop variable is 7
+
+
+=== 6. Follow the instructions :
+
+* sort and display the list;
+* add item 43 to the list and display the list;
+* reverse and display the list;
+* display the index of element 35;
+* remove item 35 and display the list;
+* display the sub-list of the 2nd to 3rd element;
+* display the sub-list from the beginning to the 2nd element;
+* display the sub-list of the 3rd element at the end of the list;
+* display the last element using a negative indication.
+
+
+Note that some list methods do not return anything.
+
+=== 7.a Write an algorithm that asks the user to enter a number. Then
+make sure that your program displays all the numbers up to the number,
+for example, if the user enters the number 3, then your program will
+display something like this: 0,1,2,3
+
+
+=== 7.b Now make sure that your program displays all the numbers down to
+0, for the same example, your program will display something like this:
+3,2,1,0
+
+
+=== 8.The price is right ! Create a variable that will contain the
+number to be found. Then create an algorithm that will ask the user to
+find this price. If the user enters a number that is too high, he will
+have the sentence: ``It’s less''. If he enters a number that is too low,
+he will have the sentence: ``It’s more''. If the user finds the right
+price he will have the sentence: ``Well done, you won''.
+
+
+=== 9. Display all employees with the sentence ``NAME is an employee.''
+
+
+=== 10. Display all elements. If the element is part of the first table
+display - ``__Java__ is a compiled language'' - and if the element is
+part of the second language, display - ``__PHP__ is an interpreted
+language'' …

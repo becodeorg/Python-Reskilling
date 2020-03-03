@@ -145,3 +145,87 @@ print(x is y) # Prints out False
 ----
 
 But this operator will be further explained later.
+
+
+== Exercises
+
+In some of these exercises, you will have to use methods that you have not seen
+yet. In this case, search on _google_ for an example of use. Take the right
+habits to avoid being blocked.
+
+*1. Create a variable `age` that contains value 55*
+
+
+*2. Adds 10 to variable `age`*
+
+
+*3. Create a variable `div_age` and assign it the value of the age
+divided by 5* +
+- ❗ Be careful, it must be an integer.
+
+
+*4. Create a variable `text_div` that contains the character string ``65
+divided by 5 is equal 11''.* +
+- You must use the `age` and `div_age` variables
+
+
+*5. Create a variable `rest_div` that contains the rest of the variable
+`age` divided by 7*
+
+
+*6. Create a variable `exp_div` that contains the value of `rest_div`
+exponent 3*
+
+
+*7. Write a program that enters an integer and then displays the value
+entered and its type.*
+
+
+*8. Use variables to represent the price of materials.* +
+- 2 cokes at 2.20€ each - 3 Gin & Tonic at 8.60€ each - 1 Goat cheese
+salad at 11.70€ - 2 steaks with fries at 18€ each - 2 spaghetti
+bolognese at 14.80€ each
+
+*Calculate the sum of all items and store it in a `restaurant_bill`
+variable*
+
+
+*Create a variable `wallet` which has a value of 120 and then create an
+algorithm that calculates the available money by subtracting the price
+of the order.*
+
+If there is enough money, record the following sentence in the variable
+`message` and subtract the expense from `wallet` : - message = ``You
+have spent'' + `restaurant_bill` + ``you have left'' + `wallet`
+
+If there is not enough money, record the following sentence in the
+`message` variable: - message= ``Sorry you’re missing _amount_missing_
+euros''
+
+If there is 0 left, record the following sentence in the `message`
+variable: - message = ``You are broke!''
+
+
+*9. Write a program that asks you to enter 2 values and displays the
+highest of the 2 values*
+
+
+*10. Write a script that asks you to enter 2 strings and displays the
+shortest of the 2 strings (the one with the least characters).*
+
+
+*11. Write a script that converts centimeters into inches.* - The
+program will start by asking the user to indicate with characters `cm'
+or `in'. - Then the program will ask you to enter the value and display
+the conversion.
+
+
+*12. Check if the variable `ingredient` is in the `bloody_mary` list.
+(Without making a loop)* * If the ingredient is in the list, display
+``You can put some into the glass''. * Otherwise display: ``Please don’t
+put this into the glass…''
+
+
+*13. Calculate the volume of a sphere using the formula _(4π/3) x R³_.
+The radius is 7.* +
+- Save the result in a ``volume'' variable.
