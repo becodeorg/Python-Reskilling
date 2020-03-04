@@ -42,11 +42,11 @@ Each module will be composed of at least a *presentation* (_given by the
 coaches_), *learning material* (_you read on your own_) and *exercises* (_will
 be corrected in groups with the coaches_).
 
-* link:./modules/introduction.adoc[1. Introduction]
-* link:./modules/conditions.adoc[2. Conditions]
-* link:./modules/loops.adoc[3. Loops and Iterator]
-* link:./modules/lists.adoc[4. Tuples and Dictionaries]
-* link:./modules/functions.adoc[5. Functions]
+* link:./modules/1.introduction.adoc[1. Introduction]
+* link:./modules/2.conditions.adoc[2. Conditions]
+* link:./modules/3.loops.adoc[3. Loops and Iterator]
+* link:./modules/4.lists.adoc[4. Tuples and Dictionaries]
+* link:./modules/5.functions.adoc[5. Functions]
 
 NOTE: We will try to see as many *good practices* (ex: _PEP8_) as possible, but
 feel free to _research_ on your own and share with the group.
