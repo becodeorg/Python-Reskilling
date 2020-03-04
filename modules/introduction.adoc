@@ -1,10 +1,62 @@
 = Introduction
 
+// Links
+:install: https://realpython.com/installing-python/
+
 == Learning Material
 
 === Setup the environment
 
-// TODO: Speak about the difference between Python 2 and Python 3.
+First thing first, if you want to code in python, you need a working _Python
+environment_. Python is an *interpreted language* without going too much into
+details that means that your code is not compiled and can be evaluated _on the
+fly_ by the _interpreter_. However, it also means that you *need the interpreter
+installed everywhere the code would be run*.
+
+NOTE: On the internet you will hear a lot about two versions of Python: 2 and 3.
+Know that you should use Python 3 for all your projects as Python 2 is no longer
+maintained.
+
+==== Installation
+
+On to the installation, the process will be different depending on which _OS_
+you are using and how exactly you want your python environment setup (_access
+python from the terminal, directly on your text editor, etc..._).
+
+Hopefully, the internet is full of {install}[guides] and your first mission is
+to try and install Python by yourself. Don't worry the coaches can and will be
+there to answer any questions you may have during that process.
+
+==== Running your first program
+
+===== Run commands directly in the shell
+
+Try to open the _Python shell_ (hint: _type `py` on windows, `python3` on
+linux_), then write the following command:
+
+[source,python]
+----
+print("Python is fun!") # Output: Python is fun!
+----
+
+And that’s it. You’ve just written your first Python program! Each time you
+enter a line, Python immediately execute the statement, displaying the value
+between the quotes.
+
+===== Run a file.py
+
+It's nice to be able to code directly from the interpreter, but you will in most
+case want to feed *scripts* to it. Let's see all the steps needed to do this.
+
+* open you text editor of choice
+* create a file _test.py_
+* write `print("Python is fun!")` within it
+* save it :)
+* execute the script from your default shell `python path/to/file`
+
+NOTE: Here I use the command `python`, but depending on your _OS_ or
+_distribution_ it might be different (ex: `py`, `python3`).
+
 
 === Python syntax
 
