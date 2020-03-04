@@ -226,7 +226,7 @@ and the range() instruction.
 display integers from 1 to 10 included, when the loop variable is 7
 
 
-### 5. Use the ``continue'' instruction to modify a ``for'' loop to
+=== 5. Use the ``continue'' instruction to modify a ``for'' loop to
 display intergers from 1 to 10 included, when the loop variable is 7
 
 
