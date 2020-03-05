@@ -212,21 +212,22 @@ else:
 
 == Exercises
 
-=== 1. Display all employee in the ``employees'' list.
+=== 1. Display all employee in the `employees` list.
+`employees =  ["Merouane", "Koen", "Jonas", "Hendrik", "Sophie", "Ferdi", "Ignace", "Axel", "Jeroen", "Adrien"]`
 
 
 === 2. Display only those whose first name begins with the letter J
 
 
-=== 3. Display integers from 0 to 23 not included, using a ``for'' loop
+=== 3. Display integers from 0 to 23 not included, using a `for` loop
 and the range() instruction.
 
 
-=== 4. Use the ``break'' instruction to interrupt a ``for'' loop to
+=== 4. Use the `break` instruction to interrupt a `for` loop to
 display integers from 1 to 10 included, when the loop variable is 7
 
 
-=== 5. Use the ``continue'' instruction to modify a ``for'' loop to
+=== 5. Use the `continue` instruction to modify a `for` loop to
 display intergers from 1 to 10 included, when the loop variable is 7
 
 
@@ -259,15 +260,16 @@ display something like this: 0,1,2,3
 === 8.The price is right ! Create a variable that will contain the
 number to be found. Then create an algorithm that will ask the user to
 find this price. If the user enters a number that is too high, he will
-have the sentence: ``It’s less''. If he enters a number that is too low,
-he will have the sentence: ``It’s more''. If the user finds the right
-price he will have the sentence: ``Well done, you won''.
+have the sentence: `It’s less`. If he enters a number that is too low,
+he will have the sentence: `It’s more`. If the user finds the right
+price he will have the sentence: `Well done, you won`.
 
 
-=== 9. Display all employees with the sentence ``NAME is an employee.''
-
+=== 9. Display all employees with the sentence `NAME is an employee.`
+`all_employees =  [["David", "John", "Gabe", "Alix", "Anthony"], ["Julie", "Jess", "Mustafa", "Claudius", "Sonja"]]`
 
 === 10. Display all elements. If the element is part of the first table
-display - ``__Java__ is a compiled language'' - and if the element is
-part of the second language, display - ``__PHP__ is an interpreted
-language'' …
+display - `__Java__ is a compiled language` - and if the element is
+part of the second language, display - `__PHP__ is an interpreted
+language` …
+`languages = [["C", "Java", "COBOL" ], ["PHP", "Python", "Javascript"]]`
