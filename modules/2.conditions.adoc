@@ -195,15 +195,15 @@ algorithm that calculates the available money by subtracting the price
 of the order.*
 
 If there is enough money, record the following sentence in the variable
-`message` and subtract the expense from `wallet` : - message = ``You
-have spent'' + `restaurant_bill` + ``you have left'' + `wallet`
+`message` and subtract the expense from `wallet` : - message = `You
+have spent` + `restaurant_bill` + `you have left` + `wallet`
 
 If there is not enough money, record the following sentence in the
-`message` variable: - message= ``Sorry you’re missing _amount_missing_
-euros''
+`message` variable: - message= `Sorry you’re missing _amount_missing_
+euros`
 
 If there is 0 left, record the following sentence in the `message`
-variable: - message = ``You are broke!''
+variable: - message = `You are broke!'`
 
 
 *9. Write a program that asks you to enter 2 values and displays the
@@ -215,17 +215,20 @@ shortest of the 2 strings (the one with the least characters).*
 
 
 *11. Write a script that converts centimeters into inches.* - The
-program will start by asking the user to indicate with characters `cm'
-or `in'. - Then the program will ask you to enter the value and display
+program will start by asking the user to indicate with characters `cm`
+or `in`. - Then the program will ask you to enter the value and display
 the conversion.
 
 
 *12. Check if the variable `ingredient` is in the `bloody_mary` list.
 (Without making a loop)* * If the ingredient is in the list, display
-``You can put some into the glass''. * Otherwise display: ``Please don’t
-put this into the glass…''
+`You can put some into the glass`. * Otherwise display: `Please don’t
+put this into the glass…`
+`bloody_mary = ["tomato juice", "vodka", "lemon juice", "worcestershire sauce",\
+               "tabasco", "ice", "salt", "pepper", "celeri"]
+ingredient = "potato"`
 
 
 *13. Calculate the volume of a sphere using the formula _(4π/3) x R³_.
 The radius is 7.* +
-- Save the result in a ``volume'' variable.
+- Save the result in a `volume` variable.
