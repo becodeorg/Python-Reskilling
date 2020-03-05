@@ -181,10 +181,13 @@ exponent 3*
 entered and its type.*
 
 
-*8. Use variables to represent the price of materials.* +
-- 2 cokes at 2.20€ each - 3 Gin & Tonic at 8.60€ each - 1 Goat cheese
-salad at 11.70€ - 2 steaks with fries at 18€ each - 2 spaghetti
-bolognese at 14.80€ each
+*8. Use variables to represent the price of materials.*
+
+- 2 cokes at 2.20€ each
+- 3 Gin & Tonic at 8.60€ each
+- 1 Goat cheese salad at 11.70€
+- 2 steaks with fries at 18€ each
+- 2 spaghetti bolognese at 14.80€ each
 
 *Calculate the sum of all items and store it in a `restaurant_bill`
 variable*
@@ -224,10 +227,13 @@ the conversion.
 (Without making a loop)* * If the ingredient is in the list, display
 `You can put some into the glass`. * Otherwise display: `Please don’t
 put this into the glass…`
-`bloody_mary = ["tomato juice", "vodka", "lemon juice", "worcestershire sauce",\
-               "tabasco", "ice", "salt", "pepper", "celeri"]
-ingredient = "potato"`
 
+[source,python]
+----
+bloody_mary = ["tomato juice", "vodka", "lemon juice", "worcestershire sauce",\
+               "tabasco", "ice", "salt", "pepper", "celeri"]
+ingredient = "potato"
+----
 
 *13. Calculate the volume of a sphere using the formula _(4π/3) x R³_.
 The radius is 7.* +
