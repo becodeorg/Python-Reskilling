@@ -233,6 +233,8 @@ display intergers from 1 to 10 included, when the loop variable is 7
 
 === 6. Follow the instructions :
 
+`list_of_num = [23, 18, 64, 35, 92]`
+
 * sort and display the list;
 * add item 43 to the list and display the list;
 * reverse and display the list;
