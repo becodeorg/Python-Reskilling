@@ -164,8 +164,8 @@ divided by 5* +
 - ❗ Be careful, it must be an integer.
 
 
-*4. Create a variable `text_div` that contains the character string ``65
-divided by 5 is equal 11''.* +
+*4. Create a variable `text_div` that contains the character string `65
+divided by 5 is equal 11`.* +
 - You must use the `age` and `div_age` variables
 
 
