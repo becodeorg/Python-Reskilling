@@ -660,12 +660,12 @@ print(a>=b) # Output: False
 print(b>=a) # Output: True
 
 ## Smaller than
-print(a>b) # Output: False
-print(b>a) # Output: True
+print(a<b) # Output: True
+print(b<a) # Output: False
 
 ## Smaller or equal to
-print(a>=b) # Output: False
-print(b>=a) # Output: True
+print(a<=b) # Output: True
+print(b<=a) # Output: False
 ----
 
 ==== Assignment operators
