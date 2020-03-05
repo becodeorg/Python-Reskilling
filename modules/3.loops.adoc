@@ -167,8 +167,8 @@ print("After the loop")
 
 Loop instructions have an "else" clause. It is executed when the loop ends with
 exhaustion of the list (with for) or when the condition becomes false (with
-while), but not when the loop is interrupted by a break instruction. This is
-illustrated in the following loop, which looks for prime numbers:
+while), but not when the loop is interrupted by a break instruction. The folowing loop illustrates the difference
+between a while and range up to 10:
 
 [source,python]
 ----
