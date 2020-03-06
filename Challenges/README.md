@@ -295,14 +295,7 @@ whether or not they are positioned so that they can attack each other.
 [README](./python-queen-attack/)
 
 
-### 41. Phone Number 
-
-Write a program that cleans up user-entered phone numbers so that they
-can be sent SMS messages.
-
-[README](./python-phone-number/)
-
-### 42. Ocr Numbers 
+### 41. Ocr Numbers 
 
 Write a program that, given a 3 x 4 grid of pipes, underscores, and
 spaces, can determine which number is represented, or whether it is
@@ -310,33 +303,33 @@ garbled.
 
 [README](./python-ocr-numbers/)
 
-### 43. House 
+### 42. House 
 
 Write a program that outputs the nursery rhyme 'This is the House that
 Jack Built'.
 
 [README](./python-house/)
 
-### 44. Triangle 
+### 43. Triangle 
 
 Write a program that can tell you if a triangle is equilateral,
 isosceles, or scalene.
 
 [README](./python-triangle/)
 
-### 45. Poker 
+### 44. Poker 
 
 Pick the best hand(s) from a list of poker hands.
 
 [README](./python-poker/)
 
-### 46. Zebra Puzzle 
+### 45. Zebra Puzzle 
 
 Write a program that solves the zebra puzzle.
 
 [README](./python-zebra-puzzle/)
 
-### 47. Rectangles 
+### 46. Rectangles 
 
 Count the rectangles in an ASCII diagram.
 
