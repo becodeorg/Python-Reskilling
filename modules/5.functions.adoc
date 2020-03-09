@@ -197,8 +197,7 @@ sum_mix(['5', '0', 9, 3, 2, 1, '9', 6, 7]) => 42
 ....
 
 
-=== 7. Return the month Complete the function which returns the month
-according to the input number:
+=== 7. Return the month Complete the function which returns the month according to the input number:
 
 ....
 1 returns "January"
