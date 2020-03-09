@@ -215,7 +215,10 @@ movies = {"Memories of Murder" : "Bong Joon Ho", "Pulp Fiction" : "Quentin Taran
 ----
 
 === 7. Replace the value of `Pulp Fiction` by `Quentin Tarantino`.
-
+[source,python]
+----
+movies = {"Memories of Murder" : "Bong Joon Ho", "Pulp Fiction" : "That guy!", "The Usual Suspects" :"Bryan Singer"}
+----
 
 === 8. Create a dictionary to build the total time with the length of each movie corresponding to the following table:
 
