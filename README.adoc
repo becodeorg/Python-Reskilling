@@ -55,7 +55,42 @@ feel free to _research_ on your own and share with the group.
 == Project
 
 The last day will be reserved to *work on a project* in small groups of _two_.
-You can find the instructions for the challenge link:./project[here].
+
+1. The Hangman
+
+Create a Hangman Game, the program should take as argument a word and give you the chance to guess the word with a specific amount of tries.
+
+2. Wordy
+
+Step 1
+E.g.
+What is 5 plus 13?
+The program should handle large numbers and negative numbers.
+Remember, that these are verbal word problems, not treated as you normally would treat a written problem. This means that you calculate as you move forward each step. In other words, you should ignore order of operations. 3 + 2 * 3 = 15, not 9.
+Use the tests to drive your solution by deleting the skip in one test at a time.
+Step 2
+E.g.
+What is 5 plus 13?
+What is 7 minus 5?
+What is 6 multiplied by 4?
+What is 25 divided by 5?
+Step 3
+E.g.
+What is 5 plus 13 plus 6?
+What is 7 minus 5 minus 1?
+What is 9 minus 3 plus 5?
+What is 3 plus 5 minus 8?
+Step 4
+E.g.
+What is 5 plus 13?
+What is 7 minus 5?
+What is 6 times 4?
+What is 25 divided by 5?
+What is 78 plus 5 minus 3?
+What is 18 times 3 plus 16?
+What is 4 times 3 divided by 6?
+What is 4 plus 3 times 2?
+
 
 
 == Useful links
